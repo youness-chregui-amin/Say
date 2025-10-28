@@ -64,8 +64,4 @@ No newline here... but now there is one!
 
 * `say(...)` automatically adds a newline after printing
 * `sayraw(...)` prints everything inline without a newline
-* Supports multiple arguments using variadic templates
-
-إذا بغيت، نقدر ندير نسخة **text مع Badges بسيطة** باش README يبان أكثر احترافية على GitHub، بلا تعقيدات.
-
-تبغي نديرها دابا؟
+* Supports multiple arguments using variadic templates.
