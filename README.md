@@ -1,32 +1,31 @@
-**Say – Lightweight C++11 Printing Library
+# Say – Lightweight C++11 Printing Library
 
-A header-only C++11 library to print text to the console easily.
+**header-only C++11 library** to print text to the console easily.
 Provides two simple functions:
 
-say(...) → prints text with newline
+* `say(...)` → prints text **with newline**
+* `sayraw(...)` → prints text **without newline**
 
-sayraw(...) → prints text without newline
+---
 
-Features
+## Features
 
-Header-only, no installation required
+* Header-only, no installation required
+* Compatible with **C++11 and above**
+* Print any number of arguments
+* Option to print with or without newline
+* Works with all types compatible with `std::cout`
+* **Compatible with Visual Studio Community 2022 and above**
 
-Compatible with C++11 and above
+---
 
-Print any number of arguments
+## Example Usage
 
-Option to print with or without newline
-
-Works with all types compatible with std::cout
-
-Compatible with Visual Studio Community 2022 and above
-
-Example Usage
+```cpp
 #include "say.h"
 
 int main()
 {
-
     say("Hello,", "this is your custom print function!");
     say("You can print numbers too:", 42, 3.14);
     sayraw("No newline here...");
@@ -34,27 +33,39 @@ int main()
 
     return 0;
 }
+```
 
-Output
+---
+
+### Output
+
+```
 Hello, this is your custom print function!
 You can print numbers too: 42 3.14
 No newline here... but now there is one!
+```
 
-Installation
+---
 
-Copy say.h into your project directory
+## Installation
 
-Include it in your code:
+1. Copy `say.h` into your project directory
+2. Include it in your code:
 
+```cpp
 #include "say.h"
+```
 
+3. Use `say(...)` or `sayraw(...)` as needed
 
-Use say(...) or sayraw(...) as needed
+---
 
-Notes
+## Notes
 
-say(...) automatically adds a newline after printing
+* `say(...)` automatically adds a newline after printing
+* `sayraw(...)` prints everything inline without a newline
+* Supports multiple arguments using variadic templates
 
-sayraw(...) prints everything inline without a newline
+إذا بغيت، نقدر ندير نسخة **text مع Badges بسيطة** باش README يبان أكثر احترافية على GitHub، بلا تعقيدات.
 
-Supports multiple arguments using variadic templates
+تبغي نديرها دابا؟
